@@ -2,7 +2,7 @@ import requests,json
 next=True
 while(next):
     out=""
-    id = int(input("Enter a numver : "))
+    id = int(input("Enter a number : "))
     response = requests.get(f"http://api.icndb.com/jokes/{id}")
     var = json.loads(response.content)
     try:
